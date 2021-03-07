@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package slack;
+
+message SendSlackMessageRequest {
+  string message = 1;
+}
+
+message SendSlackMessageResponse {
+  bool success = 1;
+}

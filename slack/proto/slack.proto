@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package slack;
+
+import "slackbot.proto";
+
+service Slack {
+  rpc SendSlackMessage(SendSlackMessageRequest) returns (SendSlackMessageResponse) {}
+}
